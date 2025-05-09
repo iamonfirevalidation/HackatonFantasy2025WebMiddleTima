@@ -1,0 +1,212 @@
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100%;
+    background-color:#312745 ;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    flex: 1;
+    background-color: #453c34;
+}
+
+header {
+    border-bottom: 6px double white;
+    background-color: #272036;
+    padding: 2rem;
+    width: 100%;
+}
+
+h1 { 
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: #9d83d6;
+}
+.wrapper {
+    background-color: #453c34;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    z-index:2;
+}
+
+.mapimg {
+    background-color: #453c34;
+    z-index: 2;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 40px;
+}
+
+.mapimg img {
+    border: 6px double white;
+    border-radius: 30px;
+}
+
+#goback {
+    border: 1px solid white;
+    width: 170px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    margin: 100px;
+    border-radius: 50px;
+    border: 4px solid #635145;
+    background-color: #9e8575;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+#goback div {
+    position: inherit;
+    justify-self: end;
+    border-radius: 50px;
+    border: 2px solid  #635145;
+    background-color: #999491;
+    width: 45px;
+    height: 45px;
+    bottom: 2px; /* ставить на місце */
+
+    transition: transform 0.3s ease-in-out, /* рухає і міняє коліри */
+     border-color 0.3s ease-in-out,
+     background-color 0.3s ease-in-out;
+}
+
+#goback:hover div {
+    transform: translatex(120px);
+    border-color: #8c7362;
+    background-color: #d9b298;
+}
+
+#gobackP {
+    position: absolute;
+    margin-inline: 10px;
+    font-weight: bolder;
+    font-family: Alegreya SC;
+    font-size: 30px;
+}
+
+/* вигляд точок  */
+.mappoint1, .mappoint2, .mappoint3, .mappoint4, .mappoint5 { 
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: wheat;
+    border-radius: 50px;
+    border: 4px solid #635145;
+}
+/* координати   */
+.mappoint1 {
+    top: 50%;
+    right: 20%;
+    left: 40%;
+    bottom: 20%;
+}
+
+.mappoint2 {
+    top: 48%;
+    right: 20%;
+    left: 60%;
+    bottom: 40%;
+}
+
+.mappoint3 {
+    top: 48%;
+    right: 60%;
+    left: 48%;
+    bottom: 40%;
+}
+
+.mappoint4 {
+    top: 73%;
+    right: 52%;
+    left: 43%;
+    bottom: 20%;
+}
+
+.mappoint5 {
+    top: 30%;
+    right: 40%;
+    left: 50%;
+    bottom: 20%;
+}
+
+/* Попап над точками  */
+.mappoint1Sign, .mappoint2Sign, .mappoint3Sign, .mappoint4Sign, .mappoint5Sign {
+    opacity: 0;
+    top: 100%;
+    position: absolute;
+    transform: translateY(0);
+    transition: all 0.1s ease;
+    transform: translateX(-20%);
+    cursor: help;
+    bottom: 100%;
+    left: 50%;
+    border: 1px solid #635145;
+    background-color: wheat;
+    color: black;
+    font-family: Alegreya SC;
+
+}
+/* їхня анімашка  */
+.mappoint1:hover .mappoint1Sign {
+    transform: translateX(-50%) translateY(5px);
+    opacity: 1;
+}
+
+.mappoint2:hover .mappoint2Sign {
+    transform: translateX(-50%) translateY(5px);
+    opacity: 1;
+}
+
+.mappoint3:hover .mappoint3Sign {
+    transform: translateX(-50%) translateY(5px);
+    opacity: 1;
+}
+
+.mappoint4:hover .mappoint4Sign {
+    transform: translateX(-50%) translateY(5px);
+    opacity: 1;
+}
+
+.mappoint5:hover .mappoint5Sign {
+    transform: translateX(-50%) translateY(5px);
+    opacity: 1;
+}
+
+.mappoint1Posilanna, .mappoint2Posilanna, .mappoint3Posilanna, .mappoint4Posilanna, .mappoint5Posilanna, #gobackAHREF {
+    text-decoration: none; /*  лінки точок і кнопки назад */
+    color: white;
+    text-align: center;
+}
+
+.footer { /* сделал все, щоб він работав нарешті */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+    justify-content: space-between; /* для кнопки */
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    /* border-radius: 35px; */
+    /* background-color: #453c34; */
+    background-color: #292433;
+    max-width: 100%;
+    font-family: "Open Sans", sans-serif;
+}
