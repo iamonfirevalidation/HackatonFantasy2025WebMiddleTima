@@ -1,0 +1,106 @@
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100%;
+    background-color:#312745 ;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    flex: 1;
+}
+
+header {
+    border-bottom: 6px double white;
+    background-color: #272036;
+    padding: 2rem;
+    width: 100%;
+}
+
+h1 { 
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: #9d83d6;
+}
+
+.tell {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.tell h1 {
+    font-family: Alegreya SC;
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+}
+
+
+.wrapper {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    z-index:2;
+}
+
+.button {
+    position: relative;
+    width: 600px;
+    height: 100px;
+    border-radius: 50px;
+    border: 4px solid #635145;
+    justify-self: center;
+    margin: 80px;
+    text-align: center;
+    background-color: #9e8575;
+
+    transition: transform 0.3s ease-out; 
+}
+
+.button div {
+    position: inherit;
+    justify-self: inherit;
+    border-radius: 50px;
+    border: 2px solid  #635145;
+    background-color: #999491;
+    width: 50px;
+    height: 50px;
+
+    transition: transform 0.3s ease-out; 
+}
+
+.button:hover, .button div:hover {
+    transform: translateY(10px);
+}
+
+.footer { /* сделал все, щоб він работав нарешті */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position:relative;
+    bottom: 0;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    /* border-radius: 35px; */
+    flex: 0 0 auto;
+    background-color: #292433;
+    max-width: 100%;
+    height: 180px;
+    font-family: "Open Sans", sans-serif;
+    z-index:1
+}

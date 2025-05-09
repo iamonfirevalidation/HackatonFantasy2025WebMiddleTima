@@ -1,0 +1,177 @@
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100%;
+    background-color:#352b47 ;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    flex: 1;
+    background-color:#352b47 ;
+}
+
+header {
+    border-bottom: 6px double white;
+    background-color: #272036;
+    padding: 2rem;
+    width: 100%;
+}
+
+h1 { 
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: #9d83d6;
+}
+.wrapper {
+    background: url(forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    color: black;
+}
+
+.title {
+    font-family: Alegreya SC;
+    font-weight: 800;
+    font-size: 40px;
+    color: black;
+}
+
+.a1 {
+    width: 600px;
+    display: flex;
+    text-align: center;
+    padding: 70px;
+    border-right: 10px double white;
+}
+
+.a1, .a2, .imga3 {
+    background-color: rgba(39, 32, 54, 0.5);
+    border-radius: 35px;
+}
+
+.a2 {
+    width: 600px;
+    display: flex;
+    text-align: left;
+    padding: 70px;
+    border-left: 10px double white;
+}
+
+.imga3 {
+    margin: 50px;
+}
+
+.imga3 img {
+    margin: 30px;
+    width: 500px;
+    height: 500px;
+    border-radius: 200px;
+    border: 8px double white;
+    display: flex;
+    justify-self: center;
+}
+
+.imga3 p {
+    margin: 30px;
+}
+
+.imga3 p, .imga3 p span {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.a1 p, .a2 p, .imga3 p {
+    font-weight: 200;
+    font-size: 24;
+    font-family: EB Garamond;
+}
+
+.a1 p span, .a2 p span, .imga3 p span {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Alegreya SC;
+    padding-left: 10px;
+}
+
+.end {
+    font-weight: 800;
+    font-size: 20;
+    font-family: EB Garamond;
+    padding: 20px;
+}
+
+#goback {
+    border: 1px solid white;
+    width: 170px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    margin: 100px;
+    border-radius: 50px;
+    border: 4px solid #635145;
+    background-color: #9e8575;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+#goback div {
+    position: inherit;
+    justify-self: end;
+    border-radius: 50px;
+    border: 2px solid  #635145;
+    background-color: #999491;
+    width: 45px;
+    height: 45px;
+    bottom: 2px; /* ставить на місце */
+
+    transition: transform 0.3s ease-in-out, /* рухає і міняє коліри */
+     border-color 0.3s ease-in-out,
+     background-color 0.3s ease-in-out;
+}
+
+#goback:hover div {
+    transform: translatex(120px);
+    border-color: #8c7362;
+    background-color: #d9b298;
+}
+
+#gobackP {
+    position: absolute;
+    margin-inline: 10px;
+    font-weight: bolder;
+    font-family: Alegreya SC;
+    font-size: 30px;
+}
+
+.footer { /* сделал все, щоб він работав нарешті */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+    justify-content: space-between; /* для кнопки */
+    border-top: 6px double white;
+    /* border-radius: 35px; */
+    /* background-color: #453c34; */
+    background-color: #292433;
+    max-width: 100%;
+    font-family: "Open Sans", sans-serif;
+}
